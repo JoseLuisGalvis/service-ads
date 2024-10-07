@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #ffff;
+}
+
+.navbar img {
+  width: 4em;
+  height: 3em;
+}
+
+.navbar-toggler {
+  border-color: #ffffff !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.loader {
+  width: 40% !important;
+}
+
+.loader:after {
+  content: "";
+  font-weight: 600;
+  font-size: 30px;
+  color: #f58a07;
+  animation-name: animatingtext;
+  animation-duration: 1800ms;
+  animation-iteration-count: infinite;
+  text-shadow: 0 0 5px rgba(243, 138, 57, 0.8), 0 0 10px rgba(243, 138, 57, 0.6),
+    0 0 15px rgba(243, 138, 57, 0.4), 0 0 20px rgba(243, 138, 57, 0.2);
+}
+
+@keyframes animatingtext {
+  0% {
+    content: " C  ";
+    text-shadow: 0 0 5px rgba(243, 138, 57, 0.8),
+      0 0 10px rgba(243, 138, 57, 0.6), 0 0 15px rgba(243, 138, 57, 0.4),
+      0 0 20px rgba(243, 138, 57, 0.2);
+  }
+  14% {
+    content: " CA  ";
+  }
+  28% {
+    content: " CAB  ";
+  }
+  42% {
+    content: " CABA  ";
+  }
+  56% {
+    content: " CABA y   ";
+  }
+  70% {
+    content: " CABA y P   ";
+  }
+  84% {
+    content: " CABA y PB   ";
+  }
+  100% {
+    content: " CABA y PBA   ";
+  }
+}
+
+.carousel-image-full-height {
+  object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+}
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-btn {
+  z-index: 2;
+}
+
+.whatsapp-btn img {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn img:hover {
+  transform: scale(1.1);
+}
+
+/* *** *** Responsive *** *** */
+@media (max-width: 768px) {
+  /* Estilos para tabletas y móviles */
+  .navbar img {
+    width: 3em;
+    height: 2em;
+  }
+
+  .navbar-brand {
+    margin-right: 0 !important;
+  }
+
+  .navbar-toggler {
+    padding: 0.25em;
+  }
+
+  .loader:after {
+    font-size: 30px;
+  }
+
+  .loader h2 {
+    font-size: 0.9em;
+    margin-top: 0.5em !important;
+  }
+
+  .loader {
+    width: 100% !important;
+  }
+
+  .loader:after {
+    font-size: 18px;
+  }
+
+  .carousel-item {
+    height: 75vh; /* Ajusta la altura del contenedor del carrusel a 100% del viewport */
+  }
+
+  .carousel-image-full-height {
+    height: 100%; /* La imagen ocupa todo el alto del contenedor */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Estilos para dispositivos móviles */
+  .navbar img {
+    width: 3em;
+    height: 2em;
+  }
+
+  .navbar-brand {
+    margin-right: 0 !important;
+  }
+
+  .navbar-toggler {
+    padding: 0.25em;
+  }
+
+  .loader:after {
+    font-size: 30px;
+  }
+
+  .loader h2 {
+    font-size: 0.9em;
+    margin-top: 0.5em !important;
+  }
+
+  .loader {
+    width: 100% !important;
+  }
+
+  .loader:after {
+    font-size: 18px;
+  }
+
+  .carousel-item {
+    height: 75vh; /* Ajusta la altura del contenedor del carrusel a 100% del viewport */
+  }
+
+  .carousel-image-full-height {
+    height: 100%; /* La imagen ocupa todo el alto del contenedor */
+  }
+
+  #pestaña {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
