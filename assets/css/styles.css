@@ -71,6 +71,24 @@ body {
   object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
 }
 
+#aside-ad {
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**/
+#games-card {
+  width: 270px;
+  height: 125px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #cccccc;
+}
+
 /* Estilos para el botón de WhatsApp */
 .whatsapp-btn {
   z-index: 2;
