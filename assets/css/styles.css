@@ -69,10 +69,29 @@ body {
 
 .carousel-image-full-height {
   object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  height: 750px; /* Ajusta la altura de la imagen según tus necesidades */
+}
+
+#pestaña {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.1em;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2),
+    /* Sombra hacia abajo */ 0 -10px 10px rgba(0, 0, 0, 0.2),
+    /* Sombra hacia arriba */ 10px 0 10px rgba(0, 0, 0, 0.2),
+    /* Sombra hacia la derecha */ -10px 0 10px rgba(0, 0, 0, 0.2); /* Sombra hacia la izquierda */
+}
+
+#pestaña img {
+  width: 325px;
+  height: 190px;
+  object-fit: contain;
 }
 
 #aside-ad {
-  width: 270px;
+  width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +199,11 @@ body {
   }
 
   .carousel-item {
-    height: 75vh; /* Ajusta la altura del contenedor del carrusel a 100% del viewport */
+    height: 40vh !important; /* Ajusta la altura del contenedor del carrusel a 100% del viewport */
+  }
+
+  .carousel-item img {
+    height: 40vh !important;
   }
 
   .carousel-image-full-height {
